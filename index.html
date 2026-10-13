@@ -2,53 +2,36 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Biricik Aşkıma ❤️</title>
 <style>
 *{box-sizing:border-box}
 body{
-margin:0;
-font-family:Georgia,serif;
-text-align:center;
-color:#8b214e;
-background:linear-gradient(135deg,#ffd6e7,#fff0f5,#ffc2dc);
-overflow-x:hidden;
+margin:0;text-align:center;font-family:Georgia,serif;
+color:#922653;
+background:linear-gradient(135deg,#ffd4e5,#fff0f6,#ffb6d5);
+overflow-x:hidden
 }
-header{padding:45px 15px 20px}
-h1{font-size:clamp(30px,8vw,48px);margin-bottom:10px}
-p{line-height:1.8}
+header{padding:40px 15px 20px}
+h1{font-size:clamp(30px,8vw,46px)}
 section{
-margin:22px auto;
-padding:24px 18px;
-width:90%;
-max-width:650px;
-background:#ffffffb8;
-border:1px solid #fff;
-border-radius:25px;
-box-shadow:0 8px 25px #d75a8730;
+width:92%;max-width:700px;margin:22px auto;
+padding:22px 16px;background:#ffffffd9;
+border-radius:24px;box-shadow:0 8px 25px #b84b7130
+}
+p{line-height:1.8}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.gallery img{
+width:100%;height:220px;object-fit:cover;
+border-radius:15px;border:3px solid white
 }
 button{
 background:#e75480;color:white;border:0;
-padding:14px 23px;border-radius:30px;
-font-size:16px;cursor:pointer;margin:8px;
+padding:14px 22px;border-radius:25px;font-size:16px
 }
-button:active{transform:scale(.96)}
-.heart{
-position:fixed;bottom:-30px;pointer-events:none;
-animation:float 7s linear forwards;z-index:-1;
-}
-@keyframes float{
-to{transform:translateY(-110vh) rotate(360deg);opacity:0}
-}
-.photos{
-display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px
-}
-.photos img{
-width:100%;height:190px;object-fit:cover;
-border-radius:16px;border:3px solid white
-}
-#letter{display:none;text-align:left;white-space:pre-line}
-input{max-width:100%;margin:12px}
+#letter{display:none;text-align:left;white-space:pre-line;line-height:1.9}
+.heart{position:fixed;bottom:-30px;pointer-events:none;animation:float 7s linear forwards;z-index:-1}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
 footer{padding:25px}
 </style>
 </head>
@@ -61,43 +44,44 @@ footer{padding:25px}
 
 <section>
 <h2>💞 Bizim Hikâyemiz</h2>
-<p>Hayatıma girdiğin günden beri sıradan günlerim bile güzelleşti. Seninle biriktireceğimiz daha nice güzel anımız olsun.</p>
+<p>Hayatıma girdiğin günden beri sıradan günlerim bile güzelleşti. Sen benim en güzel tesadüfüm ve en kıymetli hayalimsin.</p>
 <p>İyi ki varsın sevgilim 🌸</p>
 </section>
 
 <section>
 <h2>📸 En Güzel Anılarımız</h2>
-<p>Fotoğraflarınızı eklemek için aşağıdaki düğmeye dokun.</p>
-<input type="file" id="photoInput" accept="image/*" multiple>
-<div class="photos" id="gallery"></div>
+<div class="gallery">
+<img src="IMG-20260801-WA0008.jpg" alt="Anımız 1">
+<img src="IMG-20260801-WA0009.jpg" alt="Anımız 2">
+<img src="IMG-20260801-WA0011.jpg" alt="Anımız 3">
+<img src="IMG-20260801-WA0014.jpg" alt="Anımız 4">
+<img src="IMG-20260801-WA0020.jpg" alt="Anımız 5">
+<img src="IMG-20260801-WA0023.jpg" alt="Anımız 6">
+<img src="IMG-20260801-WA0031.jpg" alt="Anımız 7">
+<img src="IMG-20260801-WA0036.jpg" alt="Anımız 8">
+</div>
 </section>
 
 <section>
-<h2>💌 Sana Küçük Bir Mektubum Var</h2>
-<p>İçinde sana söylemek istediğim şeyler saklı...</p>
-<button onclick="openLetter()">Mektubunu Aç ❤️</button>
+<h2>💌 Sana Özel Gizli Mektubum</h2>
+<p>Senin için kalbimin en güzel köşesinde sakladığım birkaç söz var...</p>
+<button onclick="document.getElementById('letter').style.display='block';this.style.display='none'">Mektubunu Aç ❤️</button>
 <div id="letter">
-<p>Biricik sevgilim,
+Biricik sevgilim,
 
-Bazen sana olan sevgimi anlatmaya kelimeler yetmiyor. Sen benim en güzel tesadüfüm, en kıymetli hayalim ve yüzümü güldüren en güzel sebebimsin.
+Bazen sana olan sevgimi anlatmaya kelimeler yetmiyor. Sen benim en güzel tesadüfüm, yüzümü güldüren en güzel sebebimsin.
 
-Bugün de yarın da gelecekte kurduğumuz bütün güzel hayallerde de seninle yan yana olmak istiyorum. Birlikte gülelim, birlikte büyüyelim ve ne olursa olsun birbirimizi anlamaya çalışalım.
-
-Seni sadece bugün değil, yarınlarımızda da sevgiyle seçmek istiyorum.
+Bugün de yarın da gelecekte kurduğumuz güzel hayallerde de seninle yan yana olmak istiyorum. Birlikte gülelim, birlikte büyüyelim ve her zaman birbirimizi anlamaya çalışalım.
 
 İyi ki hayatımdasın, iyi ki benimlesin. Seni çok seviyorum. ❤️
 
-Sonsuza kadar senin,
-Seni seven biri 💗</p>
+Sonsuza kadar senin 💗
 </div>
 </section>
 
 <footer>Sen + Ben = Bir sürü güzel anı ♾️❤️</footer>
 
 <script>
-function openLetter(){
-document.getElementById('letter').style.display='block';
-}
 setInterval(()=>{
 const h=document.createElement('div');
 h.className='heart';
@@ -108,17 +92,6 @@ h.style.animationDuration=(5+Math.random()*4)+'s';
 document.body.appendChild(h);
 setTimeout(()=>h.remove(),9500);
 },450);
-
-document.getElementById('photoInput').addEventListener('change',function(){
-const gallery=document.getElementById('gallery');
-gallery.innerHTML='';
-[...this.files].forEach(file=>{
-const img=document.createElement('img');
-img.src=URL.createObjectURL(file);
-img.alt='Güzel bir anımız';
-gallery.appendChild(img);
-});
-});
 </script>
 </body>
 </html>
